@@ -1,0 +1,398 @@
+.nb-article
+  background: #fff
+  padding-bottom: 10px
+  &__figure
+    margin: 0 -10px 0 -10px
+    min-height: 244px
+    overflow: hidden
+    img
+      max-width: initial
+      min-height: inherit
+      height: initial
+      width: 100%
+  &__content
+    padding: 15px 12px 0 12px
+    margin: 0 -11px
+    background: #fff
+  &__footer
+    display: none
+    padding: 20px
+    text-align: center
+  &__map
+    min-height: 300px
+    overflow: hidden
+    margin: 0 -12px 34px -10px
+    img
+      min-height: 300px
+      min-width: 290px
+      max-width: initial
+  &__text
+    margin: 0 0 31px 0
+    max-width: 695px
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 20px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.5
+    letter-spacing: normal
+    color: #2c3238
+  @media (min-width: 480px)
+    &__figure
+      display: none
+    &__header
+      height: 360px
+      background: url('../images/png/md/article.png') center no-repeat
+    &__text
+      width: 100%
+      padding: 0 20px
+  @media (min-width: 768px)
+    padding-bottom: 52px
+    &__content
+      margin: 0
+      padding: 20px 60px
+    &__footer
+      display: block
+      padding: 20px 60px
+    &__map
+      max-width: 100%
+      overflow: hidden
+      margin: 0 0 45px 0
+    &__text
+      padding: 0
+      margin: 0 auto
+
+// qqq
+.social-list
+  font-size: 0
+  padding: 0
+  text-align: center
+  &__icon
+    display: inline-block
+    vertical-align: top
+    border: 1px solid rgba(169,176,191,0.5)
+    border-radius: 100px
+    min-width: 90px
+    height: 40px
+    overflow: hidden
+    line-height: 38px
+    padding: 4px
+    margin: 0 10px 10px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__a
+    font-family: 'ProximaNova-Bold', 'sans-serif'
+    font-size: 12px
+    color: #2C3238
+    letter-spacing: 1px
+    display: inline-block
+    text-decoration: none
+    line-height: 18px
+    position: relative
+    &:before
+      position: absolute
+      left: 0
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 20px
+      height: 20px
+      content: ''
+    &_fb
+      padding-left: 20px
+      &:before
+        width: 8px
+        height: 16px
+        background: url('../images/svg/ico-fb.svg') center no-repeat
+        background-size: 8px 16px
+    &_tw
+      padding-left: 28px
+      &:before
+        width: 18px
+        height: 14px
+        background: url('../images/svg/ico-tw.svg') center no-repeat
+        background-size: 18px 14px
+    &_gp
+      padding-left: 34px
+      &:before
+        width: 26px
+        height: 18px
+        background: url('../images/svg/ico-gp.svg') center no-repeat
+        background-size: 26px 18px
+  @media (min-width: 380px)
+    &__icon
+      min-width: 100px
+// 2222
+.nb-article-info
+  @extend .clr
+  padding: 3px 0 20px 0
+  font-size: 0
+  &__item
+    width: 50%
+    max-width: 168px
+    display: inline-block
+    margin-bottom: 20px
+    text-align: left
+    padding-left: 10px
+    &:nth-child(even)
+      padding-left: 20px
+  &__number
+    display: inline
+    vertical-align: bottom
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
+    font-size: 36px
+    color: #2C3238
+    letter-spacing: -0.5px
+  &__value
+    font-family: 'FuturaNewBook-Reg', 'sans-serif'
+    font-size: 20px
+    color: #2C3238
+    letter-spacing: 0
+    line-height: 21px
+    display: inline
+    vertical-align: bottom
+    position: relative
+    top: -4px
+    left: 6px
+    font-weight: normal
+  &__text
+    font-family: 'FuturaNewBook-Reg', 'sans-serif'
+    font-size: 18px
+    color: #747B88
+    letter-spacing: 0
+    line-height: 17px
+  @media (min-width: 450px)
+    position: static
+    text-align: center
+    &__item
+      text-align: center
+  @media (min-width: 768px)
+    &__item
+      padding-left: 0
+      &:nth-child(even)
+        padding-left: 0
+  @media (min-width: 1024px)
+    text-align: left
+    &__item
+      text-align: left
+      width: 20%
+      max-width: initial
+// 3333
+
+.nb-main-simple
+  text-align: center
+  padding: 34px 20px 24px
+  &__ribbon
+    color: #fff
+    background: linear-gradient(266deg, #df1834, #fc322f)
+    display: inline-block
+    padding: 0 20px
+    font-size: 13px
+    font-style: italic
+    height: 20px
+    line-height: 1.62
+    position: relative
+    margin-bottom: 9px
+    font-family: 'Bitter', serif
+    font-weight: normal
+    font-stretch: normal
+    letter-spacing: normal
+    &:before, &:after
+      top: 0
+      bottom: 0
+      content: ""
+      margin: auto
+      position: absolute
+    &:before
+      left: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 10px 0 10px 7px
+      border-color: transparent transparent transparent #fff
+    &:after
+      right: 0
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 10px 7px 10px 0
+      border-color: transparent #fff transparent transparent
+  &__name
+    margin-bottom: 20px
+    color: #000000
+    font-size: 26px
+    text-align: center
+    letter-spacing: 0
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
+    text-transform: uppercase
+    line-height: 1.2
+  &__time
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 18px
+    color: #2C3238
+    letter-spacing: -0.4px
+    position: relative
+    margin-bottom: 17px
+  &__category-simple
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
+    color: #9A9DAC
+    font-size: 0
+    margin-bottom: 21px
+  &__category-item
+    letter-spacing: 0
+    line-height: 23px
+    font-size: 16px
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    &:not(:first-child):before
+      content: '\00B7'
+      width: 5px
+      height: 5px
+      font-size: 29px
+      color: #9A9DAC
+      overflow: hidden
+      z-index: 2
+      line-height: 5px
+      margin-left: 9px
+      margin-right: 8px
+      display: inline-block
+      vertical-align: middle
+  &__social-list
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
+    color: #9A9DAC
+    font-size: 0
+    margin-bottom: 20px
+  &__social-item
+    letter-spacing: 0
+    line-height: 23px
+    font-size: 18px
+    color: #2D79E3
+    text-decoration: underline
+    font-family: FuturaNewBook-Reg, sans-serif
+    &:not(:first-child):before
+      content: '\00B7'
+      width: 5px
+      height: 5px
+      font-size: 29px
+      color: #9A9DAC
+      overflow: hidden
+      z-index: 2
+      line-height: 5px
+      margin-left: 11px
+      margin-right: 15px
+      display: inline-block
+      vertical-align: middle
+  &__btn
+    display: inline-block
+    border: 0
+    text-align: center
+    border-radius: 5px
+    overflow: hidden
+    background: #289D6F
+    text-overflow: ellipsis
+    color: #fff
+    font-family: 'FuturaNewDemi-Reg', 'sans-serif'
+    font-size: 14px
+    letter-spacing: 2px
+    line-height: 0.9
+    text-decoration: none
+    padding: 15px 38px 15px
+    text-transform: uppercase
+    margin-bottom: 8px
+  &__price
+    font-family: 'FuturaNewBook-Reg', 'sans-serif'
+    color: #9A9DAC
+    font-size: 16px
+    margin-bottom: 12px
+  .nb-main-list__city
+    display: inline-block
+    margin-bottom: 8px
+  @media (min-width: 480px)
+    position: static
+    text-align: left
+    padding-top: 28px
+    &__ribbon
+      background: rgba(255,255,255,0.6)
+      color: #1a835a
+      text-align: left
+      padding-left: 15px
+      margin-bottom: 7px
+      &:before
+        content: none
+      &:after
+        border-color: transparent #1a835a transparent transparent
+    &__name
+      color: #fff
+      word-spacing: 5px
+      text-align: left
+      font-size: 32px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      margin-bottom: 65px
+    &__time
+      color: #fff
+      display: inline-block
+      margin-bottom: 5px
+      font-size: 20px
+      padding-left: 7px
+    &__category-simple
+      position: static
+      margin-bottom: 70px
+    &__category-item
+      color: rgba(255,255,255,0.6)
+      &:not(:first-child):before
+        color: rgba(255,255,255,0.6)
+    &__social-list
+      display: none
+    &__btn
+      color: #1a835a
+      background: #fff
+      display: inline-block
+      vertical-align: middle
+      margin-right: 17px
+      padding: 16px 23px 14px
+      border: 1px solid transparent
+      transition: color, background, border, 0.2s
+      &:hover
+        color: #fff
+        background: #1a835a
+        border: 1px solid rgba(255,255,255,0.4)
+    &__price
+      color: rgba(255,255,255,0.6)
+      display: inline-block
+      vertical-align: middle
+    .nb-main-list__city
+      margin-bottom: 5px
+      font-size: 18px
+      width: initial !important
+      color: #fff
+      &:after
+        content: ','
+  @media (min-width: 768px)
+    padding-left: 60px
+  @media (min-width: 1024px)
+    position: relative
+    &__social-list
+      display: none
+// 4444
+
+.nb-article-link
+  display: none
+  vertical-align: middle
+  position: relative
+  top: -2px
+  width: 18px
+  height: 18px
+  font-size: 0px
+  text-decoration: none
+  &__fb 
+    background: url('../images/png/fb.png') center no-repeat
+    background-size: 18px 18px
+  &__web
+    background: url('../images/png/web.png') center no-repeat
+    background-size: 18px 18px
+  @media (min-width: 992px)
+    display: inline-block
+// 555 

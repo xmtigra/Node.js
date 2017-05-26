@@ -1,0 +1,88 @@
+.nb-menu
+  &__toggle
+    top: 0
+    width: 50px
+    right: 5px
+    height: 50px
+    cursor: pointer
+    position: absolute
+    transition: transform 0.4s
+    background-size: 24px 20px
+    background: url('../images/svg/ico-menu.svg') center no-repeat
+    &_active
+      transform: rotate(-90deg)
+  ul
+    list-style-type: none
+    li
+      display: block
+      a
+        color: #ffffff
+        display: block
+        font-size: 18px
+        line-height: 1.17
+        padding: 4px 22px
+        font-style: normal
+        font-weight: normal
+        font-stretch: normal
+        text-decoration: none
+        letter-spacing: normal
+        font-family: 'FuturaNewBook-Reg', sans-serif
+  @media (min-width: 1000px)
+    position: static
+    display: block !important
+    &__toggle
+      display: none
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline-block
+        &.nb-menu__calendar
+          margin-left: 81px
+          position: relative
+          &:before
+            content: ""
+            position: absolute
+            left: 4px
+            top: -2px
+            bottom: 0
+            margin: auto
+            width: 17px
+            height: 18px
+            background-image: url('../images/svg/ico-calendar.svg')
+            background-size: 17px 18px
+          a
+            padding-right: 0
+            padding-left: 30px
+        a
+          font-size: 18px
+          padding: 4px 22px
+          line-height: 1.17
+          display: inline-block
+          font-family: 'FuturaNewBook-Reg', sans-serif
+          &:hover
+            color: darken(#ccd6e8, 10%)
+  @media (min-width: 7000px)
+    ul li.nb-menu__calendar
+      margin-left: 0
+  @media (min-width: 10px) AND (max-width: 999px)
+    left: 0
+    top: 50px
+    width: 100%
+    display: none
+    position: absolute
+    border-top: 1px solid grey
+    background-color: rgba(0,0,0,0.85)
+    > ul
+      margin: 0
+      padding: 20px 0
+      > li
+        &.active a
+          background: #1f9e6e
+          box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.55), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.55)
+        > a
+          display: block
+          font-size: 20px
+          line-height: 1.8
+          &:hover
+            background: #1f9e6e

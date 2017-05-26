@@ -1,0 +1,124 @@
+.nb-acardion
+  width: 100%
+  border-top: 1px solid gray
+  text-align: left
+  line-height: 1
+  position: fixed
+  bottom: 0
+  z-index: 999
+  background: #fff
+  display: none
+  &__label
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 18px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    letter-spacing: normal
+    color: #747b88
+    padding: 13px 30px 13px 20px
+    position: relative
+    display: block
+    height: 48px
+    cursor: pointer
+    line-height: 20px
+    border-bottom: 1px solid #cfdbe6
+    &:hover
+      cursor: pointer
+    &:after
+      content: ''
+      position: absolute
+      right: 23px
+      top: 23px
+      display: inline-block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 5px 3.5px 0 3.5px
+      border-color: #a9b0bf transparent transparent transparent
+  input:checked + .nb-acardion__label
+    background: #4ab986
+    color: #fff
+    &:hover
+      cursor: pointer
+    &:after
+      border-color: #fff transparent transparent transparent
+  input[type="radio"]
+    position: absolute
+    width: 1px
+    height: 1px
+    opacity: 0
+  input.checkbox
+    position: absolute
+    width: 1px
+    height: 1px
+    opacity: 0
+    &:checked + label
+      border: 2px solid #fff
+      background: #fff
+      color: #1f9e6e
+  .form-filter__row-item
+    margin-bottom: 10px
+  article
+    background: rgba(255, 255, 255, 0.5)
+    margin-top: -1px
+    overflow: hidden
+    height: 0
+    position: relative
+    z-index: 10
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 16px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #ffffff
+  input:checked ~ article
+    background: #4ab986
+    height: initial
+    padding: 0 30px 13px 20px
+  &__bottom
+    @extend .clr
+    padding: 20px
+  &__reset
+    float: left
+    display: inline-block !important
+    vertical-align: middle
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 18px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    background: transparent
+    letter-spacing: normal
+    border: 0
+    padding: 0
+    margin: 0
+    outline: 0
+    color: #2d79e3
+    border-bottom: 1px dotted #2d79e3
+  &__submit
+    float: right
+    border: 0
+    padding: 0
+    text-transform: uppercase
+    outline: 0
+    margin: 0
+    display: inline-block !important
+    vertical-align: middle
+    width: 150px
+    height: 42px
+    border-radius: 5px
+    background-color: #289d6f
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    font-size: 14px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: 2px
+    text-align: center
+    color: #ffffff
+

@@ -1,0 +1,344 @@
+
+.nb-main
+  position: static
+  padding-top: 11px
+  @media (min-width: 768px)
+    padding-top: 48px
+
+
+.nb-main-sponsor
+  &__header
+    margin: 0 0 18px 0
+    color: #FFF
+    font-size: 30px
+    line-height: 1.2
+    text-align: center
+    letter-spacing: 2.3px
+    font-family: 'FuturaNew-Reg', sans-serif
+    font-weight: bold
+  &__text
+    opacity: 0.7
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 16px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 1.33
+    letter-spacing: 1px
+    text-align: center
+    color: #fff
+    margin-bottom: 25px
+  &__logo
+    margin: 0 auto 36px auto
+    text-align: center
+  &__img
+    max-width: 100%
+    margin-left: -16px
+  @media (min-width: 768px)
+    &__header
+      font-size: 60px
+      line-height: 1.2
+      letter-spacing: 4.6px
+      margin-bottom: 14px
+    &__text
+      font-size: 18px
+      margin-bottom: 14px
+    &__img
+      width: 360px
+    &__logo
+      margin-bottom: 68px
+
+.nb-main-section
+  position: static
+  &__container
+    padding: 0
+  @media (min-width: 1100px)
+    background: #f1f4fb linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
+    &_item
+      background-image: linear-gradient(rgba(204, 214, 232, 0.38) 0%, #F1F4FB 28%)
+
+
+
+.nb-main-top
+  user-select: none
+  position: static
+  margin: 0 19px 30px 19px
+  background: #FFF
+  display: block
+  text-align: center
+  border-radius: 5px
+  overflow: hidden
+  cursor: pointer
+  &__btn
+    padding: 15px 13px 13px 28px
+    font-size: 14px
+    color: #289D6F
+    display: inline-block
+    text-align: center
+    letter-spacing: 2px
+    line-height: 1
+    position: relative
+    text-transform: uppercase
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    &[data-start]:after
+      content: attr(data-start)
+      background: #289D6F
+      border-radius: 50%
+      left: 3px
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      width: 12px
+      height: 16px
+      font-size: 12px
+      line-height: 1.4
+      color: #fff
+      padding-left: 2px
+      padding-right: 1px
+      text-align: center
+    &:before
+      position: absolute
+      content: ''
+      left: 0
+      top: 0
+      bottom: 0
+      margin: auto
+      background: url('../images/svg/ico-filter.svg') center no-repeat
+      background-size: 20px 20px
+      border-radius: 50%
+      overflow: hidden
+      width: 20px
+      height: 20px
+  @media (min-width: 1100px)
+    display: none
+
+
+.nb-main-list
+  position: relative
+  &__item
+    display: block
+    transition: box-shadow 0.2s
+    background: #FFF
+    box-shadow: 0 1px 3px 0 rgba(204,214,232,0.50)
+    margin-bottom: 10px
+    padding: 23px 29px 18px 40px
+    position: relative
+    &:hover
+      box-shadow: 0 10px 15px 0 #E3E9F7
+      cursor: pointer
+    &_fixed
+      background: #FFFAE6
+    &_done
+      background-color: rgba(255,255,255,0.5)
+      box-shadow: 0 1px 3px 0 rgba(204, 214, 232, 0.5)
+      > *
+        opacity: 0.6
+    &_flag
+      &:before
+        position: absolute
+        left: 0
+        top: 29px
+        content: ''
+        width: 17px
+        height: 12px
+      &-orange:before
+        background: url('../images/svg/ico-flag-orange.svg') center no-repeat
+        background-size: 17px 12px
+      &-red:before
+        background: url('../images/svg/ico-flag-red.svg') center no-repeat
+        background-size: 17px 12px
+  &__time
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    font-size: 20px
+    color: #747B88
+    letter-spacing: 0
+    margin-bottom: 10px
+    width: 100%
+    &[href]
+      display: block
+      color: currentColor
+      text-decoration: none
+      &:hover
+        color: #2D79E3
+        text-decoration: underline
+  &__info
+    position: static
+  &__place
+    display: inline-block
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    font-size: 20px
+    color: #000000
+    letter-spacing: 0.56px
+    line-height: 23px
+    margin-bottom: 10px
+    &[href]
+      color: currentColor
+      text-decoration: none
+      &:hover
+        color: #2D79E3
+        text-decoration: underline
+  &__category-list, &__social-list
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    color: #9A9DAC
+    font-size: 0
+    margin-bottom: 10px
+  &__category-item, &__social-item
+    letter-spacing: 0
+    line-height: 23px
+    font-size: 16px
+    &[href]
+      color: currentColor
+      text-decoration: none
+      &:hover
+        color: #2D79E3
+        text-decoration: underline
+    &:not(:first-child):before
+      content: '\00B7'
+      width: 5px
+      height: 5px
+      font-size: 29px
+      color: #9A9DAC
+      overflow: hidden
+      z-index: 2
+      line-height: 5px
+      margin-left: 8px
+      margin-right: 9px
+      display: inline-block
+      vertical-align: middle
+  &__city
+    font-family: 'FuturaNewBook-Reg', sans-serif
+    font-size: 18px
+    color: #2C3238
+    letter-spacing: 0
+    padding-left: 37px
+    position: relative
+    margin-bottom: 10px
+    &:before
+      content: ''
+      width: 28px
+      height: 21px
+      position: absolute
+      z-index: 1
+      background: #d2d2d2
+      border-radius: 3px
+      overflow: hidden
+      background-size: 28px 20px
+      left: 0
+      top: 0
+    &[href]
+      display: block
+      color: currentColor
+      text-decoration: none
+      &:hover
+        color: #2D79E3
+        text-decoration: underline
+    &_usa:before
+      background: url('../images/svg/ico-usa.svg') center no-repeat
+      background-size: 28px 20px
+  &__social-list
+    display: none
+  &__title
+    color: #000000
+    font-size: 28px
+    text-align: center
+    line-height: 1.2
+    letter-spacing: 0
+    padding: 40px 0 40px
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    background-image: linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
+    &_no-gradient
+      background: transparent
+  .nb-main-section__container
+    padding: 0
+  @media (min-width: 1100px)
+    &__social-list
+      display: block
+    &__item
+      display: flex
+      align-items: flex-start
+    &__time
+      width: 75px
+    &__place
+      margin-bottom: 0
+    &__category-list
+      margin-bottom: 2px
+    &__info
+      width: 455px
+    &__city
+      width: 225px
+    &__social-list
+      width: 135px
+      margin-bottom: 0
+    &__social-item
+      font-size: 18px
+      &:not(:first-child):before
+        color: #9A9DAC
+        overflow: hidden
+        z-index: 2
+        line-height: 5px
+        margin-left: 12px
+        margin-right: 12px
+        display: inline-block
+        vertical-align: middle
+    &__title
+      font-size: 36px
+      background-image: none
+      padding-bottom: 10px
+      margin-bottom: 0
+    .nb-main-section__container
+      padding: 30px 60px 0
+
+
+
+
+.nb-main-bottom
+  position: static
+  text-align: center
+  padding: 10px 0 42px
+  &__more
+    text-transform: uppercase
+    font-family: 'FuturaNewDemi-Reg', sans-serif
+    font-size: 14px
+    color: #747B88
+    letter-spacing: 2px
+    border: 2px solid rgba(116, 123, 136, 0.7)
+    border-radius: 3px
+    display: inline-block
+    font-weight: 400
+    background: #edf1f9
+    padding: 12px 20px
+    line-height: 1
+    transition: background 0.2s
+    user-select: none
+    text-decoration: none
+    &:hover
+      color: #fff
+      cursor: pointer
+      background: darken(#289D6F, 5%)
+      border-color: darken(#289D6F, 5%)
+    &:active
+      color: #fff
+      cursor: pointer
+      background: lighten(#289D6F, 5%)
+      border-color: lighten(#289D6F, 5%)
+    &:focus
+      outline: none
+    &_active
+      width: 170px
+      height: 40px
+      font-size: 0
+      background: transparent url('../images/svg/ico-more.svg') top center no-repeat !important
+      background-size: 39px 50px
+      border: none !important
+      cursor: default !important
+
+
+
+
+$countryList: ad ea af ag ai al am ao aq ar as at au aw ax az ba bb bd be bf bg bh bi bj bl bm bn bo bq br bs bt bv bw by bz ca cc cd cf cg ch ci ck cl cm cn co cr cu cv cw cx cy cz de dj dk dm do dz ec ee eg eh er es et eu fi fj fk fm fo fr ga gb-eng gb-nir gb-sct gb-wls gb gd de gf gg gh gi gl gm gn gp gq gr gs gt gu gw gy hk hm hn hr ht hu id ie il im 'in' io iq ir is it je jm jo jp ke kg kh ki km kn kp kr kw ky kz la lb lc li lk lr ls it iu lv ly ma mc md me mf mg mh mk ml mm mn mo mp mq mr ms mt mu mv mw mx my mz na nc ne nf ng ni nl no np nr ni nz om pa pe pf pg ph pk pl pm pn pr ps pt pw py qa re ro rs ru rw sa sb sc sd se sg sh si sj sk sl sm sn so sr ss st sv sx sy sz tc td tf tg th tj tk tl tm tn 'to' tr tt tv tw tz ua ug um un us uy uz va ve vg vi vn vu wf ws ye yt za zm zw  
+
+@each $country in $countryList
+  .nb-main-list__city_#{$country}:before
+    background: url('../images/flags/#{$country}.svg') center no-repeat
+    background-size: 28px 20px

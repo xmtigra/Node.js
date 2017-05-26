@@ -1,0 +1,88 @@
+
+.clearfix, .container, .clr
+  zoom: 1
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+=clr
+  zoom: 1
+  &:before, &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+img
+  max-width: 100%
+
+html
+  height: 100%
+  min-height: 100%
+  -webkit-text-size-adjust: none
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+body
+  padding: 0
+  margin: 0
+  min-width: 320px
+  -webkit-font-smoothing: antialiased
+  color: #2C3238
+  height: auto
+  min-height: 100%
+  background: #ccd6e8
+  background-image: linear-gradient(#CCD6E8 0%, #F1F4FB 28%)
+  background-size: 100%
+  background-attachment: fixed
+  font-family: 'FuturaNewBook-Reg', Helvetica, Arial, sans-serif
+  position: relative
+  &.opened-mobile-filter:before
+    position: fixed
+    content: ''
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    z-index: 2
+    background: rgba(52,61,69,0.5)
+
+input
+  -webkit-font-smoothing: antialiased
+
+.container
+  padding-right: 10px
+  padding-left: 10px
+  margin-right: auto
+  margin-left: auto
+  @media (min-width: 768px)
+    width: 760px
+  @media (min-width: 992px)
+    width: 980px
+  @media (min-width: 1100px)
+    width: 1100px
+  &-fluid
+    padding-right: 10px
+    padding-left: 10px
+    margin-right: auto
+    margin-left: auto
+
+
+.nb-wrapper
+  position: static
+  padding-top: 60px
+  //background-image: linear-gradient(to bottom, #ccd6e8, #f1f4fb), linear-gradient(#f1f4fb, #f1f4fb)
+  background: url(../images/png/md/bg.png) center top repeat-x
+  background-size: 630px auto
+  @media (min-width: 768px)
+    background-size: 1230px auto
+
+.hidden 
+  opacity: 0
+  visibility: hidden

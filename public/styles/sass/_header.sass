@@ -1,0 +1,44 @@
+.nb-header
+  top: 0
+  left: 0
+  z-index: 99
+  height: 50px
+  width: 100%
+  color: #fff
+  position: fixed
+  trasition: background 0.5s
+  background-repeat: no-repeat
+  background-position: center
+  background-color: rgba(0, 84, 52, 0.7)
+  &_fixed, &_opened
+    background-color: rgba(0,0,0,0.85)
+  &__side
+    &_left
+      text-align: center
+      .nb-header__img
+        margin: 0 auto
+    &_right
+      position: static
+  .container
+    width: 100%
+    padding: 11px 15px 6px 15px
+  img, a
+    display: block
+  @media (min-width: 768px)
+    height: 52px
+    .container
+      padding: 12px 15px 6px 15px
+      position: relative
+  @media (min-width: 1000px)
+    &__side
+      &_left
+        float: left
+        padding: 0
+      &_right
+        float: right
+    .container
+      width: 980px
+  @media (min-width: 1200px)
+    .container
+      width: 1080px
+      padding: 12px 60px 6px 60px

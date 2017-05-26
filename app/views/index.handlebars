@@ -1,4 +1,326 @@
+<div class="nb-wrapper">
+  <!-- nb-header -->
+  <header class="nb-header">
+    <div class="container">
+      <div class="nb-header__side nb-header__side_left">
+        <a href="/" class="nb-header__logo">
+          <img src="images/svg/logo-nb2.svg" alt="" class="nb-header__img">
+        </a>
+      </div>
+      <div class="nb-header__side nb-header__side_right">
+        <div class="nb-menu__toggle"></div>
+        <nav class="nb-menu">
+          <ul>
+            <li><a href="/">Тренировки</a></li>
+            <li><a href="/">Питание</a></li>
+            <li><a href="/">Экипировка</a></li>
+            <li><a href="/">Триатлон</a></li>
+            <li><a href="/">Еще</a></li>
+            <li class="nb-menu__calendar active hidden"><a href="/">Календарь</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> <!-- / nb-header -->
+  <!-- nb-main -->
+  <div class="nb-main">
+    <div class="container">
+      <!-- nb-main-sponsor -->
+      <div class="nb-main-sponsor">
+        <div class="nb-main-sponsor__header">КАЛЕНДАРЬ СОРЕВНОВАНИЙ</div>
+        <div class="nb-main-sponsor__text">при поддержке</div>
+        <div class="nb-main-sponsor__logo">
+          <img src="images/svg/logo-nb.svg" alt="new balance" class="nb-main-sponsor__img">
+        </div>
+      </div> <!-- / nb-main-sponsor -->
+      <!-- nb-main-section -->
+    </div>
 
 
-  <h1>{{title }}</h1>
-  <p>Welcome to {{title }}</p>
+    <div class="container">
+      <div class="nb-main-top">
+        <div class="nb-main-section__container">
+            <div class="nb-main-top__btn" data-start="5">найдите свой старт</div>
+        </div>
+      </div>
+      <div class="nb-main-section">
+        <div class="nb-main-list">
+          <div class="nb-main-list-menu">
+              <div class="nb-main-list-menu__side nb-main-list-menu__side_left">
+                <nav class="nb-main-menu">
+                  <ul class="nb-main-menu__box">
+                    <li class="nb-main-menu__item nb-main-menu__item_active"><a href="#" class="nb-main-menu__a">все события</a></li>
+                    <li class="nb-main-menu__item" data-sort="running"><a href="#" class="nb-main-menu__a">бег</a></li>
+                    <li class="nb-main-menu__item" data-sort="triathlon"><a href="#" class="nb-main-menu__a">триатлон</a></li>
+                    <li class="nb-main-menu__item" data-sort="swimming"><a href="#" class="nb-main-menu__a">плавание</a></li>
+                    <li class="nb-main-menu__item" data-sort="cycling"><a href="#" class="nb-main-menu__a">велогонки</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="nb-main-list-menu__side nb-main-list-menu__side_right">
+                <nav class="nb-main-filter">
+                  <ul class="nb-main-filter__list">
+                    <li class="nb-main-filter__item nb-main-filter__item_slim">
+                      <a class="nb-main-filter__a">Где бежать</a>
+                      <span class="nb-main-filter__span">4</span>
+                      <ul>
+                        <li>Украина</li>
+                        <li>Россия</li>
+                        <li class="last">США</li>
+
+                        <li>Северная Америка</li>
+                        <li>Южная Америка</li>
+                        <li>Африка</li>
+                        <li>Европа</li>
+                        <li>Азия</li>
+                        <li>Австралия</li>
+                      </ul>
+                    </li>
+                    <li class="nb-main-filter__item nb-main-filter__item_full">
+                      <a class="nb-main-filter__a">Настройки</a>
+                      <span class="nb-main-filter__span">6</span>
+                      <ul>
+                        <li>
+                          <form action="" class="form-filter">
+                            <div class="form-filter__item">
+                              <div class="form-filter__title">Какие дистанции вас интересуют?</div>
+                              <div class="form-filter__row">
+                                <input type="checkbox" name="distance[]" value="all" id="all">
+                                <label class="form-filter__row-item form-filter__row-item_current" for="all">Все</label>
+                                <input type="checkbox" name="distance[]" value="upto5km" id="upto5km" checked>
+                                <label class="form-filter__row-item" for="upto5km">До 5 км</label>
+                                <input type="checkbox" name="distance[]" value="10km" id="10km">
+                                <label class="form-filter__row-item" for="10km">10 км</label>
+                                <input type="checkbox" name="distance[]" value="halfmarathon" id="halfmarathon" checked>
+                                <label class="form-filter__row-item" for="halfmarathon">Полумарафон</label>
+                                <input type="checkbox" name="distance[]" value="marathon" id="marathon">
+                                <label class="form-filter__row-item" for="marathon">Марафон</label>
+                                <input type="checkbox" name="distance[]" value="ultramarathon" id="ultramarathon">
+                                <label class="form-filter__row-item" for="ultramarathon">Ультрамарафоны</label>
+                              </div>
+                            </div>
+                            <div class="form-filter__item">
+                              <div class="form-filter__title">В какое время года старт?</div>
+                              <div class="form-filter__row">
+                                <input type="checkbox" name="year[]" value="2017" id="y2017">
+                                <label class="form-filter__row-item form-filter__row-item_current" for="y2017">2017</label>
+                                <input type="checkbox" name="year[]" value="y2017-1" id="y2017-1">
+                                <label class="form-filter__row-item" for="y2017-1">Зима</label>
+                                <input type="checkbox" name="year[]" value="y2017-2" id="y2017-2">
+                                <label class="form-filter__row-item" for="y2017-2">Весна</label>
+                                <input type="checkbox" name="year[]" value="y2017-3" id="y2017-3" checked>
+                                <label class="form-filter__row-item" for="y2017-3">Лето</label>
+                                <input type="checkbox" name="year[]" value="y2017-4" id="y2017-4">
+                                <label class="form-filter__row-item" for="y2017-4">Осень</label>
+                                <input type="checkbox" name="year[]" value="y2018" id="y2018">
+                                <label class="form-filter__row-item" for="y2018">2018</label>
+                              </div>
+                            </div>
+                            <input type="submit" value="применить" class="form-filter__submit">
+                          </form>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+          <div class="nb-main-section__container">
+            <div data-sort="running" class="nb-main-list__item nb-main-list__item_flag nb-main-list__item_flag-orange nb-main-list__item_fixed">
+              <div class="nb-main-list__time">05.11</div>
+              <div class="nb-main-list__info">
+                <a href="/item" class="nb-main-list__place">Savannah Rock N' Roll Marathon</a>
+                <div class="nb-main-list__category-list">
+                  <span class="nb-main-list__category-item">Марафон</span>
+                  <span class="nb-main-list__category-item">Полумарафон</span>
+                  <span class="nb-main-list__category-item">10 км</span>
+                  <span class="nb-main-list__category-item">8 км</span>
+                  <span class="nb-main-list__category-item">5 км</span>
+                  <span class="nb-main-list__category-item">2 км</span>
+                </div>
+              </div>
+              <div class="nb-main-list__city nb-main-list__city_usa">Savannah</div>
+              <div class="nb-main-list__social-list">
+                <a href="#" class="nb-main-list__social-item">Сайт</a>
+                <a href="#" class="nb-main-list__social-item">FB</a>
+                <a href="#" class="nb-main-list__social-item">VK</a>
+              </div>
+            </div>
+            <div data-sort="running" class="nb-main-list__item">
+              <div class="nb-main-list__time">05.11</div>
+              <div class="nb-main-list__info">
+                <a href="/item" class="nb-main-list__place">Savannah Rock N' Roll Marathon</a>
+                <div class="nb-main-list__category-list">
+                  <span class="nb-main-list__category-item">Марафон</span>
+                  <span class="nb-main-list__category-item">Полумарафон</span>
+                  <span class="nb-main-list__category-item">10 км</span>
+                  <span class="nb-main-list__category-item">8 км</span>
+                  <span class="nb-main-list__category-item">5 км</span>
+                  <span class="nb-main-list__category-item">2 км</span>
+                </div>
+              </div>
+              <div class="nb-main-list__city nb-main-list__city_gr">Afiny</div>
+              <div class="nb-main-list__social-list">
+                <a href="#" class="nb-main-list__social-item">Сайт</a>
+                <a href="#" class="nb-main-list__social-item">FB</a>
+                <a href="#" class="nb-main-list__social-item">VK</a>
+              </div>
+            </div>
+            <div data-sort="triathlon" class="nb-main-list__item nb-main-list__item_flag nb-main-list__item_flag-red">
+              <div class="nb-main-list__time">06.11</div>
+              <div class="nb-main-list__info">
+                <a href="/item" class="nb-main-list__place">Savannah Rock N' Roll Marathon</a>
+                <div class="nb-main-list__category-list">
+                  <span class="nb-main-list__category-item">Марафон</span>
+                  <span class="nb-main-list__category-item">Полумарафон</span>
+                  <span class="nb-main-list__category-item">10 км</span>
+                  <span class="nb-main-list__category-item">8 км</span>
+                  <span class="nb-main-list__category-item">5 км</span>
+                  <span class="nb-main-list__category-item">2 км</span>
+                </div>
+              </div>
+              <div class="nb-main-list__city nb-main-list__city_gb">Leeds</div>
+              <div class="nb-main-list__social-list">
+                <a href="#" class="nb-main-list__social-item">Сайт</a>
+                <a href="#" class="nb-main-list__social-item">FB</a>
+                <a href="#" class="nb-main-list__social-item">VK</a>
+              </div>
+            </div>
+            <div data-sort="cycling" class="nb-main-list__item">
+              <div class="nb-main-list__time">13.11</div>
+              <div class="nb-main-list__info">
+                <a href="/item" class="nb-main-list__place">Savannah Rock N' Roll Marathon</a>
+                <div class="nb-main-list__category-list">
+                  <span class="nb-main-list__category-item">Марафон</span>
+                  <span class="nb-main-list__category-item">Полумарафон</span>
+                  <span class="nb-main-list__category-item">10 км</span>
+                  <span class="nb-main-list__category-item">8 км</span>
+                  <span class="nb-main-list__category-item">5 км</span>
+                  <span class="nb-main-list__category-item">2 км</span>
+                </div>
+              </div>
+              <div class="nb-main-list__city nb-main-list__city_jp">Heilig Landstichting</div>
+              <div class="nb-main-list__social-list">
+                <a href="#" class="nb-main-list__social-item">Сайт</a>
+                <a href="#" class="nb-main-list__social-item">FB</a>
+                <a href="#" class="nb-main-list__social-item">VK</a>
+              </div>
+            </div>
+            <div data-sort="swimming" class="nb-main-list__item nb-main-list__item_done">
+              <div class="nb-main-list__time">13.11</div>
+              <div class="nb-main-list__info">
+                <a href="/item" class="nb-main-list__place">Savannah Rock N' Roll Marathon</a>
+                <div class="nb-main-list__category-list">
+                  <span class="nb-main-list__category-item">Марафон</span>
+                  <span class="nb-main-list__category-item">Полумарафон</span>
+                  <span class="nb-main-list__category-item">10 км</span>
+                  <span class="nb-main-list__category-item">8 км</span>
+                  <span class="nb-main-list__category-item">5 км</span>
+                  <span class="nb-main-list__category-item">2 км</span>
+                </div>
+              </div>
+              <div class="nb-main-list__city nb-main-list__city_nl">Heilig Landstichting</div>
+              <div class="nb-main-list__social-list">
+                <a href="#" class="nb-main-list__social-item">Сайт</a>
+                <a href="#" class="nb-main-list__social-item">FB</a>
+                <a href="#" class="nb-main-list__social-item">VK</a>
+              </div>
+            </div>
+            <div data-sort="cycling" class="nb-main-list__item nb-main-list__item_done">
+              <div class="nb-main-list__time">20.11</div>
+              <div class="nb-main-list__info">
+                <a href="/item" class="nb-main-list__place">Savannah Rock N' Roll Marathon</a>
+                <div class="nb-main-list__category-list">
+                  <span class="nb-main-list__category-item">Марафон</span>
+                  <span class="nb-main-list__category-item">Полумарафон</span>
+                  <span class="nb-main-list__category-item">10 км</span>
+                  <span class="nb-main-list__category-item">8 км</span>
+                  <span class="nb-main-list__category-item">5 км</span>
+                  <span class="nb-main-list__category-item">2 км</span>
+                </div>
+              </div>
+              <div class="nb-main-list__city nb-main-list__city_de">Savannah</div>
+              <div class="nb-main-list__social-list">
+                <a href="#" class="nb-main-list__social-item">Сайт</a>
+                <a href="#" class="nb-main-list__social-item">FB</a>
+                <a href="#" class="nb-main-list__social-item">VK</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nb-main-bottom">
+          <a href="#" class="nb-main-bottom__more">показать еще</a>
+        </div>
+      </div>  <!-- / nb-main-section -->
+    </div>
+
+
+
+  </div> <!-- / nb-main -->
+  <!-- nb-info -->
+  <div class="nb-info">
+    <!-- nb-info__text -->
+    <div class="container">
+      <div class="nb-info__text">
+        <p>As search engines have matured, they have started identifying more metrics for determining rankings. One metric that stood out among the rest was link relevancy. Link relevancy is determined by both the content of the source page and the content of the anchor text. It is a natural phenomenon that occurs when people link out to other content on the web.</p>
+        <p>This is most easily understood with an example. Imagine that someone writes a blog about whiteboard markers. Ever inclined to learn more about their passion, they spend part of their day reading what other people online have to say about whiteboard markers. Now imagine that while reading on their favorite topic, the dry erase marker enthusiast finds an article about the psychological effects of marker color choice. Excited, she goes back to her website to blog about the article so her friends can read about it.</p>
+        <p>When she writes the blog post and links to the article, she gets to choose the anchor text for the link pointing at the article. She could choose something like “click here,” but more likely, she will choose something that it is relevant to the article. In this case, she chooses “psychological effects of marker color choice.” Someone else who links to the same article might use the link anchor text, "marker color choice and its effect on the brain."</p>
+      </div>
+    </div> <!-- / nb-info__text -->
+  </div> <!-- / nb-info -->
+  <!-- nb-footer -->
+  <footer class="nb-footer">
+    <div class="container">
+      <img src="images/png/md/footer.png" alt="footer">
+    </div>
+  </footer> <!-- / nb-footer -->
+</div>
+<noindex>
+  <section class="nb-acardion">
+    <form action="/" method="get" name="filter">
+      <div>
+        <input id="ac-1" name="accordion-1" type="radio" />
+        <label class="nb-acardion__label" for="ac-1">Вид спорта</label>
+        <article class="nb-acardion__article">
+          Well, the way they make shows is, they make one show. That show's called a pilot.
+        </article>
+      </div>
+      <div>
+        <input id="ac-2" name="accordion-1" type="radio" checked/>
+        <label class="nb-acardion__label" for="ac-2">Дистанция</label>
+        <article class="nb-acardion__article">
+            <input class="checkbox" type="checkbox" name="distance[]" value="all" id="distance1">
+            <label class="form-filter__row-item form-filter__row-item_current" for="distance1">Все</label>
+            <input class="checkbox" type="checkbox" name="distance[]" value="upto5km" id="distance2" checked>
+            <label class="form-filter__row-item" for="distance2">До 5 км</label>
+            <input class="checkbox" type="checkbox" name="distance[]" value="10km" id="distance3">
+            <label class="form-filter__row-item" for="distance3">10 км</label>
+            <input class="checkbox" type="checkbox" name="distance[]" value="halfmarathon" id="distance4" checked>
+            <label class="form-filter__row-item" for="distance4">Полумарафон</label>
+            <input class="checkbox" type="checkbox" name="distance[]" value="marathon" id="distance5">
+            <label class="form-filter__row-item" for="distance5">Марафон</label>
+            <input class="checkbox" type="checkbox" name="distance[]" value="ultramarathon" id="distance6">
+            <label class="form-filter__row-item" for="distance6">Ультрамарафоны</label>
+        </article>
+      </div>
+      <div>
+        <input id="ac-3" name="accordion-1" type="radio" />
+        <label class="nb-acardion__label" for="ac-3">Где бежать</label>
+        <article class="nb-acardion__article">
+          Well, the way they make shows is, they make one show. That show's called a pilot.
+        </article>
+      </div>
+      <div>
+        <input id="ac-4" name="accordion-1" type="radio" />
+        <label class="nb-acardion__label" for="ac-4">В какое время года</label>
+        <article class="nb-acardion__article">
+          Well, the way they make shows is, they make one show. That show's called a pilot.
+        </article>
+      </div>
+      <div class="nb-acardion__bottom">
+        <input type="reset" value="Очистить" class="nb-acardion__reset">
+        <input type="submit" value="ПРИМЕНИТЬ" class="nb-acardion__submit">
+      </div>
+    </form>
+  </section>
+</noindex>
