@@ -5,6 +5,7 @@ var express = require('express'),
 
 module.exports = function (app) {
   app.use('/', router);
+  app.use('/item', router);
 };
 
 router.get('/', function (req, res, next) {
@@ -15,4 +16,10 @@ router.get('/', function (req, res, next) {
       articles: articles
     });
   });
+});
+
+router.get('/item', function (req, res, next) {
+    res.render('item', {
+      title: 'КАЛЕНДАРЬ СТАРТОВ'
+    });
 });
